@@ -1,0 +1,26 @@
+{
+  "name": "execute-module-loader",
+  "version": "0.1.0",
+  "description": "Build-time module execution in a Webpack loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsaunders/execute-module-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "execute",
+    "module",
+    "codegen"
+  ],
+  "author": "Nick Saunders <nick@saunde.rs>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nsaunders/execute-module-loader/issues"
+  },
+  "homepage": "https://github.com/nsaunders/execute-module-loader#readme"
+}
