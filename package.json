@@ -1,6 +1,6 @@
 {
   "name": "execute-module-loader",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Build-time module execution in a Webpack loader",
   "scripts": {
     "precommit": "lint-staged && jest",
