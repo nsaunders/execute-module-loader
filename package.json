@@ -4,7 +4,12 @@
   "description": "Build-time module execution in a Webpack loader",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "lint-staged && jest",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -22,5 +27,27 @@
   "bugs": {
     "url": "https://github.com/nsaunders/execute-module-loader/issues"
   },
-  "homepage": "https://github.com/nsaunders/execute-module-loader#readme"
+  "homepage": "https://github.com/nsaunders/execute-module-loader#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "memfs": "^3.4.13",
+    "prettier": "^2.8.2",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.75.0"
+  },
+  "dependencies": {
+    "safe-json-stringify": "^1.2.0"
+  },
+  "peerDependencies": {
+    "webpack": ">=5.52.0 && <6"
+  }
 }
