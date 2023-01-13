@@ -2,11 +2,11 @@
   "name": "execute-module-loader",
   "version": "0.1.0",
   "description": "Build-time module execution in a Webpack loader",
-  "main": "index.js",
   "scripts": {
     "precommit": "lint-staged && jest",
-    "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "babel src -d dist",
+    "test": "jest"
   },
   "jest": {
     "testEnvironment": "node"
@@ -14,6 +14,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nsaunders/execute-module-loader.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/loader.js",
+  "engines": {
+    "node": ">=10.13.0"
   },
   "keywords": [
     "webpack",
@@ -29,6 +36,7 @@
   },
   "homepage": "https://github.com/nsaunders/execute-module-loader#readme",
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
