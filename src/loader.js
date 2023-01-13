@@ -12,7 +12,7 @@ export async function pitch(remaining) {
         type: "string",
       },
       module: {
-        type: "boolean",
+        oneOf: [{ type: "boolean" }, { const: "" }],
       },
     },
   });
@@ -22,7 +22,7 @@ export async function pitch(remaining) {
     this.getOptions(),
   );
 
-  if (options.module) {
+  if (options.module || options.module === "") {
     return stringify(_module);
   }
 

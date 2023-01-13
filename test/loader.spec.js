@@ -78,6 +78,24 @@ test("under `module` option outputs the whole module in JSON format", async () =
   });
 });
 
+test("allows the `module` flag to be set by query string", async () => {
+  const stats = await compiler(
+    "component.js",
+    { module: "" }, // e.g. { use: "execute-module-loader?module" }
+  );
+  const {
+    modules: [{ source }],
+  } = stats.toJson({ source: true });
+  const output = getOutput(source);
+  expect(JSON.parse(output)).toEqual({
+    moduleId: "button",
+    css: ".foo{}",
+    obj: {
+      obj: "[Circular]",
+    },
+  });
+});
+
 function getOutput(content) {
   if (!content.startsWith("export default ")) {
     throw new Error("Unexpected format. Check getOutput() test function.");
