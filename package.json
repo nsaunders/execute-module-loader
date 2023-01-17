@@ -3,6 +3,7 @@
   "version": "1.0.0-alpha.1",
   "description": "Build-time module execution in a Webpack loader",
   "scripts": {
+    "lint": "eslint *.js src test --no-ignore .eslintrc.js",
     "precommit": "lint-staged && jest",
     "prepare": "husky install",
     "prepublishOnly": "babel src -d dist",
