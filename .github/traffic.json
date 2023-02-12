@@ -139,5 +139,21 @@
     },
     "timestamp": "2023-02-01T00:00:00Z",
     "clones": null
+  },
+  {
+    "views": null,
+    "timestamp": "2023-02-05T00:00:00Z",
+    "clones": {
+      "uniques": 2,
+      "count": 3
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-02-12T00:00:00Z",
+    "clones": {
+      "uniques": 1,
+      "count": 2
+    }
   }
 ]
