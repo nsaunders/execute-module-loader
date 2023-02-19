@@ -152,7 +152,15 @@
     "views": null,
     "timestamp": "2023-02-12T00:00:00Z",
     "clones": {
-      "uniques": 1,
+      "uniques": 3,
+      "count": 5
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-02-13T00:00:00Z",
+    "clones": {
+      "uniques": 2,
       "count": 2
     }
   }
