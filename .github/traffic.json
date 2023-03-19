@@ -246,5 +246,45 @@
     },
     "timestamp": "2023-03-10T00:00:00Z",
     "clones": null
+  },
+  {
+    "views": null,
+    "timestamp": "2023-03-12T00:00:00Z",
+    "clones": {
+      "uniques": 2,
+      "count": 3
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-03-13T00:00:00Z",
+    "clones": {
+      "uniques": 1,
+      "count": 1
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-03-15T00:00:00Z",
+    "clones": {
+      "uniques": 2,
+      "count": 2
+    }
+  },
+  {
+    "views": {
+      "uniques": 1,
+      "count": 27
+    },
+    "timestamp": "2023-03-16T00:00:00Z",
+    "clones": null
+  },
+  {
+    "views": null,
+    "timestamp": "2023-03-17T00:00:00Z",
+    "clones": {
+      "uniques": 1,
+      "count": 1
+    }
   }
 ]
