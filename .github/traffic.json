@@ -842,5 +842,29 @@
       "uniques": 2,
       "count": 3
     }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-09-03T00:00:00Z",
+    "clones": {
+      "uniques": 3,
+      "count": 4
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-09-04T00:00:00Z",
+    "clones": {
+      "uniques": 3,
+      "count": 3
+    }
+  },
+  {
+    "views": null,
+    "timestamp": "2023-09-10T00:00:00Z",
+    "clones": {
+      "uniques": 1,
+      "count": 2
+    }
   }
 ]
